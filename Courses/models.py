@@ -14,3 +14,8 @@ class Courses(models.Model):
     video = models.FileField(upload_to='Courses/')
     img = models.ImageField(upload_to='Courses/')
     date = models.DateField()
+
+    def __str__(self):
+        return self.title
+
+    
