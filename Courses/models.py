@@ -8,7 +8,7 @@ class Courses(models.Model):
     title = models.CharField(max_length=100)
     describtion = models.TextField(max_length=1000)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    bewertung = models.TextField(max_length=500)
+    
     language = models.CharField(max_length=100)
     author = models.ForeignKey(User, related_name='Courses_author', on_delete=models.CASCADE)
     video = models.FileField(upload_to='Courses/')
@@ -18,4 +18,6 @@ class Courses(models.Model):
     def __str__(self):
         return self.title
 
+class Courses_rewis(models.Model):
+    bewertung = models.TextField(max_length=500)
     
