@@ -21,3 +21,5 @@ class Courses(models.Model):
 
 class Courses_rewis(models.Model):
     bewertung = models.TextField(max_length=500,)
+    def __str__(self):
+        return self.bewertung    
