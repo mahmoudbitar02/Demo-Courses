@@ -22,7 +22,8 @@ from Courses.views import Courses_list, Courses_detaile
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('blog/' , Courses_list)
+    path('blog/' , Courses_list),
+    path('blog/<int:id>', Courses_detaile)
 ]
 
 

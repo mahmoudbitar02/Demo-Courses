@@ -8,5 +8,6 @@ def Courses_list(request):
     return render(request, 'courses.html', {'data':all})
 
 
-def Courses_detaile(request):
-    pass
+def Courses_detaile(request,id):
+    course = Courses.objects.get(id=id)
+    return render(request, 'single.html', {'data':course})
