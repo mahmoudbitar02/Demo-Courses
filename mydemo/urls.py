@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-
+from Courses.views import Courses_list, Courses_detaile
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('blog/' , Courses_list)
 ]
 
 

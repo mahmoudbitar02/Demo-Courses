@@ -19,7 +19,10 @@ class Courses(models.Model):
         return self.title
 
 
-class Courses_rewis(models.Model):
-    bewertung = models.TextField(max_length=500,)
-    def __str__(self):
-        return self.bewertung    
+#class Courses_rewis(models.Model):
+ #   bewertung = models.TextField(max_length=1000) 
+   
+   
+   
+  #  def __str__(self):
+   #     return self.bewertung    
