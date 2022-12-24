@@ -18,6 +18,6 @@ class Courses(models.Model):
     def __str__(self):
         return self.title
 
+
 class Courses_rewis(models.Model):
-    bewertung = models.TextField(max_length=500)
-    
+    bewertung = models.TextField(max_length=500,)
