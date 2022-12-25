@@ -18,12 +18,14 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from Courses.views import Courses_list, Courses_detaile
+from movies.views import movies_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('blog/' , Courses_list),
-    path('blog/<int:id>', Courses_detaile)
+    path('blog/<int:id>', Courses_detaile),
+    path('movies/', movies_list)
 ]
 
 

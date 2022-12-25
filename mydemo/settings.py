@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'Courses',
     'Coursesrewis',
+
+    'Movies',
 ]
 
 MIDDLEWARE = [
